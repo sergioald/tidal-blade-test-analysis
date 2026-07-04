@@ -59,13 +59,3 @@ from tidal_blade_test_analysis.actuator import root_bending_moment_knm
 rbm = root_bending_moment_knm(loads_kn=[95, 95, 95], positions_m=[2.26, 3.56, 4.48])
 print(rbm)
 ```
-
-## 6. Migrate legacy scripts safely
-
-When refactoring one legacy script:
-
-1. Choose one calculation block.
-2. Copy the smallest reproducible logic into `src/tidal_blade_test_analysis/`.
-3. Add a synthetic test.
-4. Compare output against the legacy script using private TDMS data.
-5. Only then replace the legacy step in the documented pipeline.

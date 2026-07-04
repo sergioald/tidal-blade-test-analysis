@@ -2,13 +2,12 @@
 
 ## Project
 
-**Tidal Blade Test Analysis** is a Python research-software repository for processing and validating TDMS data from full-scale composite tidal blade structural testing. It is based on legacy FastBlade / LoadTide analysis scripts and reorganises them into a public, reusable repository structure.
+**Tidal Blade Test Analysis** is a Python research-software repository for processing and validating TDMS data from full-scale composite tidal blade structural testing. It provides a public, reusable software layer around FastBlade / LoadTide analysis workflows.
 
 ## Technical contribution
 
 The repository demonstrates how exploratory laboratory data-processing scripts can be converted into maintainable research software:
 
-- original TDMS workflows are preserved under `legacy/` for provenance;
 - reusable calculations are moved into a Python package under `src/`;
 - public synthetic tests verify FFT, damping, static calibration, fatigue-cycle, and actuator/root-bending-moment helper logic;
 - raw TDMS data and Excel logs are excluded from version control;
@@ -32,12 +31,11 @@ Later FastBlade work on clamping/load-introduction and destructive/failure testi
 
 ## Why this matters
 
-Laboratory test data often starts as one-off scripts tied to local paths and private data. This repository shows how to convert that into a maintainable software asset without losing the original provenance or over-claiming reproducibility.
+Laboratory test data often requires a careful balance between useful public software and private experimental data. This repository shows how to document and test reusable analysis logic without over-claiming reproducibility.
 
 ## Current limitations
 
 - The public repository does not include raw TDMS data.
-- The full legacy pipeline is not yet fully refactored into callable functions.
 - Some original scripts still need manual validation against the private experiment archive before being replaced.
 - DIC/clamping and destructive-test/failure-analysis workflows are documented as related context only.
 

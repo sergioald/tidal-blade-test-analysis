@@ -61,20 +61,13 @@ These related studies are documented for context but are not claimed as fully re
 - Provide command-line entry points
 - Use `pyproject.toml` for environment metadata
 - Run tests in GitHub Actions
-- Preserve legacy scripts for provenance
-
-## Provenance
-
-The repository preserves the original uploaded scripts under `legacy/original_code/` and records alternative Code3 versions under `legacy/code3_alternatives/`.
 
 ## Risk and mitigation
 
 | Risk | Mitigation |
 |---|---|
 | Raw files are too large/private for GitHub | Use ignored local `data/` folders and small synthetic examples |
-| Legacy scripts execute immediately on import | Keep in `legacy/`; migrate logic into callable package functions |
-| Hard-coded Windows paths | Use CLI arguments and configuration templates |
-| Duplicated analysis variants | Consolidate into one configurable analysis pipeline |
+| Local/private data paths | Use CLI arguments and configuration templates |
 | Paper scope could be overstated | Label the first two papers as primary scope and later clamping/destructive papers as related context |
 
 

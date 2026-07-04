@@ -18,14 +18,13 @@ This repository contains Python workflows for processing and analysing full-scal
 - fatigue-cycle peak/trough summaries;
 - natural-frequency and damping helpers;
 - actuator-load and root-bending-moment checks;
-- single-actuator and multi-actuator test comparison;
-- preservation of the original legacy scripts used during the analysis workflow.
+- single-actuator and multi-actuator test comparison.
 
 The main public scope is the analysis context of the first FastBlade / LoadTide full-scale fatigue test and the later single-vs-multi-actuator comparison study. Later clamping/load-introduction and destructive-testing studies are listed as related FastBlade work, but this repository does **not** currently claim to reproduce their DIC, clamping, or failure-analysis workflows.
 
 ## What this is not
 
-This is not a replacement for the private experimental data archive. Raw TDMS files, Excel logs, DIC images, and generated result folders are intentionally ignored by Git. The repository provides a public software layer: code, documentation, synthetic tests, configuration examples, and provenance notes.
+This is not a replacement for the private experimental data archive. Raw TDMS files, Excel logs, DIC images, and generated result folders are intentionally ignored by Git. The repository provides a public software layer: code, documentation, synthetic tests, and configuration examples.
 
 ---
 
@@ -55,9 +54,7 @@ flowchart LR
 | `src/tidal_blade_test_analysis/` | Tested Python utilities and CLI commands |
 | `tests/` | Pytest tests using synthetic public data |
 | `examples/` | Configuration templates and a small static-fit example |
-| `docs/` | Publications, test configurations, workflow guide, software card, and legacy inventory |
-| `legacy/original_code/` | Original uploaded scripts preserved for provenance |
-| `legacy/code3_alternatives/` | Alternative versions from the second archive where they differed |
+| `docs/` | Publications, test configurations, workflow guide, software card, data dictionary, and applied-AI notes |
 | `data/` | Local data layout description; raw data ignored by Git |
 
 ---
@@ -157,20 +154,6 @@ See [`docs/publications.md`](docs/publications.md).
 4. *Destructive testing and failure analysis of a full-scale composite tidal turbine blade*.
 
 ---
-
-## Legacy-script migration plan
-
-The original scripts are valuable because they encode the actual experiment logic. They also contain exploratory patterns that are fragile in a public repository: hard-coded local paths, duplicated analysis variants, immediate execution on import, and private data assumptions.
-
-Recommended migration path:
-
-1. Keep the scripts under `legacy/` as provenance.
-2. Move repeated blocks into tested modules under `src/tidal_blade_test_analysis/`.
-3. Replace hard-coded paths with command-line arguments or configuration files.
-4. Add synthetic tests for each calculation before refactoring the full workflow.
-5. Add small public examples, but keep raw TDMS data outside Git.
-
-See [`docs/legacy_inventory.md`](docs/legacy_inventory.md) for the script-by-script inventory.
 
 ---
 

@@ -11,7 +11,7 @@ The public repository does not include raw TDMS or Excel data. This page documen
 | Strain gauges | linear and rosette strain channels | Static/fatigue strain response and comparison across blade stations |
 | Accelerometers | blade or frame acceleration | Natural-frequency and damping analysis |
 | Time metadata | TDMS waveform start/increment, timestamps | Synchronisation, sample-count checks, and drift diagnostics |
-| Test logs | test type, actuator setup, target loads, notes | Configuration and provenance |
+| Test logs | test type, actuator setup, target loads, notes | Configuration and traceability |
 
 ## Derived outputs
 

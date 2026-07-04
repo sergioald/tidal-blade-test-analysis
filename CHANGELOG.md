@@ -12,7 +12,6 @@ Initial repository-ready version under the generic name **Tidal Blade Test Analy
 - Renamed the repository/package framing to a generic tidal-blade structural-test analysis scope while keeping FastBlade / LoadTide as the primary case-study context.
 - Added a Python package with tested reusable utilities for TDMS discovery, channel summaries, FFT/natural-frequency helpers, static load-displacement fitting, fatigue cycle helpers, actuator/root-bending-moment checks, and CLI entry points.
 - Added example configurations for the single-actuator and single-vs-multi-actuator test campaigns.
-- Added documentation for primary publications, related FastBlade studies, test configurations, data dictionary, workflow, software card, and legacy inventory.
+- Added documentation for primary publications, related FastBlade studies, test configurations, data dictionary, workflow, and software card.
 - Added GitHub-ready project metadata: README, pyproject, CI workflow, license, citation file, contributing guide, and tests.
-- Preserved the original research scripts under `legacy/original_code/` and alternative Code3 variants under `legacy/code3_alternatives/`.
 - Documented the clamping and destructive-testing papers as related context without claiming full reproduction.

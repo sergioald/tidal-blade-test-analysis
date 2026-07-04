@@ -17,4 +17,3 @@ python -m pytest
 1. Keep raw TDMS files, Excel logs, and derived result folders out of Git.
 2. Add reusable code under `src/tidal_blade_test_analysis/` rather than adding new monolithic scripts.
 3. Add tests for any new signal-processing, static-fitting, fatigue, or TDMS-summary logic.
-4. Keep `legacy/` scripts for provenance, but prefer new commands through `tidal-blade-test`.

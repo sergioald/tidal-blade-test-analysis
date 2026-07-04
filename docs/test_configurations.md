@@ -1,6 +1,6 @@
 # Test configurations
 
-The uploaded legacy scripts contain reusable analysis logic, but the papers make clear that the meaning of each analysis depends on the test configuration. The public repository therefore uses configuration files to document actuator positions, target load quantities, and analysis intent.
+The papers make clear that the meaning of each analysis depends on the test configuration. The public repository therefore uses configuration files to document actuator positions, target load quantities, and analysis intent.
 
 ## Single-actuator fatigue configuration
 

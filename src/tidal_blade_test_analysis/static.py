@@ -24,7 +24,7 @@ class LinearFitResult:
 def fit_load_displacement(load: np.ndarray | list[float], displacement: np.ndarray | list[float]) -> LinearFitResult:
     """Fit ``load = slope * displacement + intercept``.
 
-    This captures a common static-test calculation from the legacy scripts in a
+    This captures a common static-test calculation in a
     small, testable function.
     """
     x = np.asarray(displacement, dtype=float)
