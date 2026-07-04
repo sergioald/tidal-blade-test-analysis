@@ -1,0 +1,27 @@
+project:
+  name: tidal-blade-test-analysis
+  campaign: single_vs_multi_actuator
+
+scope:
+  publication_role: primary
+  description: Comparison of single- and three-actuator full-scale tidal blade testing.
+
+single_actuator:
+  count: 1
+  positions_m: [3.56]
+
+three_actuator:
+  count: 3
+  positions_m: [2.26, 3.56, 4.48]
+
+load_direction: XBB
+target_quantity: root_bending_moment
+
+workflows:
+  - channel_inventory
+  - static_comparison
+  - fatigue_comparison
+  - root_bending_moment_check
+  - strain_response
+  - displacement_response
+  - control_noise_context

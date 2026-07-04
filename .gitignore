@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+
+# Local data and outputs
+Test Data/
+Join_Data/
+Process_Data/
+Re_Sample_Data/
+Results/
+All_Life/
+data/raw/
+data/interim/
+data/processed/
+data/results/
+*.tdms
+*.tdms_index
+*.xlsx
+*.pkl
+*.pickle
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.spyproject/
+.spyderproject

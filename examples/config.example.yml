@@ -1,0 +1,23 @@
+project:
+  name: tidal-blade-test-analysis
+  root: .
+
+inputs:
+  raw_tdms_dir: data/raw
+  test_log: data/raw/Loadtide_Test_Log.xlsx
+
+outputs:
+  channel_summary_csv: data/results/channel_summary.csv
+  static_results_dir: data/results/static
+  natural_frequency_results_dir: data/results/natural_frequency
+  fatigue_results_dir: data/results/fatigue
+
+channels:
+  load_prefix: Load_A
+  displacement_prefix: Disp
+  strain_prefix: Strain
+
+analysis:
+  default_sample_rate_hz: 2500
+  dominant_frequency_peaks: 5
+  target_quantity: root_bending_moment

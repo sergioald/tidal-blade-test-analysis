@@ -1,0 +1,20 @@
+# Example applied-AI screening configuration for a tidal blade fatigue test.
+# Column names should be adapted to the processed CSV exported from TDMS.
+workflow: anomaly_screening
+input_csv: data/processed/example_fatigue_channels.csv
+time_column: time_s
+signal_columns:
+  - actuator_load_kn
+  - root_bending_moment_knm
+  - tip_displacement_mm
+  - strain_1_1_microstrain
+feature_windows:
+  window_size_samples: 5000
+  step_size_samples: 2500
+model:
+  type: isolation_forest
+  contamination: 0.02
+  random_state: 42
+outputs:
+  feature_table: data/results/ml/window_features.csv
+  anomaly_table: data/results/ml/anomaly_scores.csv

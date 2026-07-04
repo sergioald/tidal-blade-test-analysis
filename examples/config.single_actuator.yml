@@ -1,0 +1,26 @@
+project:
+  name: tidal-blade-test-analysis
+  campaign: first_full_scale_fatigue
+
+scope:
+  publication_role: primary
+  description: First FastBlade / LoadTide full-scale tidal blade fatigue test.
+
+actuators:
+  count: 1
+  positions_m: [3.55]
+  angle_deg_from_XB: 14.58
+  load_direction_note: Approximately 97% XBB/edgewise and 26% YBB/flapwise components.
+
+targets:
+  target_quantity: root_bending_moment
+  fatigue_target_rbm_knm: 652
+  representative_peak_actuator_load_kn: 184
+
+workflows:
+  - channel_inventory
+  - static_load_displacement
+  - fatigue_cycle_summary
+  - natural_frequency
+  - strain_response
+  - displacement_response

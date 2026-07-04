@@ -1,0 +1,93 @@
+cff-version: 1.2.0
+title: "Tidal Blade Test Analysis"
+message: "If you use this software, please cite the repository and the relevant tidal blade structural-testing publication(s)."
+type: software
+authors:
+  - family-names: Lopez-Dubon
+    given-names: Sergio
+repository-code: "https://github.com/sergioald/tidal-blade-test-analysis"
+license: MIT
+version: "0.1.0"
+date-released: "2026-07-04"
+keywords:
+  - FastBlade
+  - LoadTide
+  - TDMS
+  - tidal turbine blades
+  - structural testing
+  - fatigue analysis
+  - actuator loading
+  - root bending moment
+references:
+  - type: article
+    title: "A Full-Scale Tidal Blade Fatigue Test using the FastBlade Facility"
+    authors:
+      - family-names: Lopez Dubon
+        given-names: Sergio
+      - family-names: Vogel
+        given-names: Christopher
+      - family-names: Garcia Cava
+        given-names: David
+      - family-names: Cuthill
+        given-names: Fergus
+      - family-names: McCarthy
+        given-names: Edward D.
+      - family-names: Ó Brádaigh
+        given-names: Conchur M.
+    year: 2024
+    journal: "Renewable Energy"
+    doi: "10.1016/j.renene.2024.120653"
+  - type: article
+    title: "A full-scale composite tidal blade fatigue test using single and multiple actuators"
+    authors:
+      - family-names: Lopez Dubon
+        given-names: Sergio
+      - family-names: Cuthill
+        given-names: Fergus
+      - family-names: Vogel
+        given-names: Christopher
+      - family-names: Ó Brádaigh
+        given-names: Conchur
+      - family-names: McCarthy
+        given-names: Edward D.
+    year: 2024
+    journal: "Composites Part A: Applied Science and Manufacturing"
+    doi: "10.1016/j.compositesa.2024.108140"
+  - type: article
+    title: "Clamping parameters in full-scale tidal turbine blade tests: A case study"
+    authors:
+      - family-names: Valdivia-Camacho
+        given-names: Miguel A.
+      - family-names: Lopez Dubon
+        given-names: Sergio
+      - family-names: Cuthill
+        given-names: Fergus
+      - family-names: Munko
+        given-names: Marek J.
+      - family-names: McCarthy
+        given-names: Edward D.
+      - family-names: Alam
+        given-names: Parvez
+      - family-names: Ó Brádaigh
+        given-names: Conchúr M.
+    year: 2025
+    journal: "Ocean Engineering"
+    doi: "10.1016/j.oceaneng.2025.120722"
+  - type: article
+    title: "Destructive testing and failure analysis of a full-scale composite tidal turbine blade"
+    authors:
+      - family-names: Cuthill
+        given-names: Fergus
+      - family-names: Lopez Dubon
+        given-names: Sergio
+      - family-names: Vogel
+        given-names: Christopher
+      - family-names: Valdivia Camacho
+        given-names: Miguel
+      - family-names: Ó Brádaigh
+        given-names: Conchúr
+      - family-names: McCarthy
+        given-names: Eddie
+    year: 2025
+    journal: "International Marine Energy Journal"
+    doi: "10.36688/imej.8.279-285"
