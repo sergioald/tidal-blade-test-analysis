@@ -40,7 +40,7 @@ class ActuatorSetup:
         *,
         angle_deg_from_xb: float = 0.0,
         name: str = "",
-    ) -> "ActuatorSetup":
+    ) -> ActuatorSetup:
         positions = tuple(float(value) for value in positions_m)
         _validate_positions(positions)
         return cls(positions_m=positions, angle_deg_from_xb=float(angle_deg_from_xb), name=name)

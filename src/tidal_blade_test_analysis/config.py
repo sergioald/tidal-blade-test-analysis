@@ -20,7 +20,7 @@ class ProjectPaths:
     root: Path
 
     @classmethod
-    def from_root(cls, root: str | Path = ".") -> "ProjectPaths":
+    def from_root(cls, root: str | Path = ".") -> ProjectPaths:
         return cls(Path(root).expanduser().resolve())
 
     @property

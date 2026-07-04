@@ -6,9 +6,9 @@ The public repository does not contain raw TDMS files. These functions import
 
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from collections.abc import Iterable
+from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Iterable
 
 import pandas as pd
 

@@ -13,7 +13,6 @@ from collections.abc import Mapping, Sequence
 import numpy as np
 import pandas as pd
 
-
 _DEFAULT_STATS = ("mean", "std", "rms", "min", "max", "ptp", "crest_factor", "slope")
 
 
@@ -144,7 +143,7 @@ def cycle_response_features(
             raise ValueError(f"Response {name!r} must have the same length as load")
 
     rows: list[dict[str, float | int]] = []
-    for cycle_id, (start, stop) in enumerate(zip(idx[:-1], idx[1:]), start=1):
+    for cycle_id, (start, stop) in enumerate(zip(idx[:-1], idx[1:], strict=False), start=1):
         lo = load_arr[start : stop + 1]
         load_range = float(np.nanmax(lo) - np.nanmin(lo))
         row: dict[str, float | int] = {

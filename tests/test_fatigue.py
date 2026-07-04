@@ -1,6 +1,10 @@
 import numpy as np
 
-from tidal_blade_test_analysis.fatigue import cycle_ranges, peak_valley_indices, summarise_cycle_ranges
+from tidal_blade_test_analysis.fatigue import (
+    cycle_ranges,
+    peak_valley_indices,
+    summarise_cycle_ranges,
+)
 
 
 def test_turning_points_and_ranges():
