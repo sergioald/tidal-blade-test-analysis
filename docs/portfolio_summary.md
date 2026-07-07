@@ -42,11 +42,10 @@ Laboratory test data often requires a careful balance between useful public soft
 ## Next development steps
 
 1. Add a small anonymised TDMS fixture or generated TDMS example.
-2. Refactor the join/resample workflow into tested functions.
-3. Add a validation report that checks sample counts, time increments, channel availability, and drift.
-4. Replace duplicated `Main_Analysis*` scripts with a single configurable CLI pipeline.
-5. Add optional paper-specific workflows only when the corresponding public/anonymised data are available.
-
+1. Refactor the join/resample workflow into tested functions.
+1. Add a validation report that checks sample counts, time increments, channel availability, and drift.
+1. Replace duplicated `Main_Analysis*` scripts with a single configurable CLI pipeline.
+1. Add optional paper-specific workflows only when the corresponding public/anonymised data are available.
 
 ## Applied AI extension
 

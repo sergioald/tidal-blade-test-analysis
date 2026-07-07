@@ -3,9 +3,10 @@
 ## 0.1.0
 
 ### Added
+
 - Applied-AI screening utilities for fixed-window features, cycle-response features, robust drift scoring, and baseline Isolation Forest anomaly detection.
 - Synthetic anomaly-screening example and applied-AI documentation.
- - 2026-07-04
+- 2026-07-04
 
 Initial repository-ready version under the generic name **Tidal Blade Test Analysis**.
 

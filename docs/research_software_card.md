@@ -64,12 +64,11 @@ These related studies are documented for context but are not claimed as fully re
 
 ## Risk and mitigation
 
-| Risk | Mitigation |
-|---|---|
-| Raw files are too large/private for GitHub | Use ignored local `data/` folders and small synthetic examples |
-| Local/private data paths | Use CLI arguments and configuration templates |
-| Paper scope could be overstated | Label the first two papers as primary scope and later clamping/destructive papers as related context |
-
+| Risk                                       | Mitigation                                                                                           |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Raw files are too large/private for GitHub | Use ignored local `data/` folders and small synthetic examples                                       |
+| Local/private data paths                   | Use CLI arguments and configuration templates                                                        |
+| Paper scope could be overstated            | Label the first two papers as primary scope and later clamping/destructive papers as related context |
 
 ## Applied AI extension
 
